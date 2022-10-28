@@ -50,7 +50,7 @@ public class VendingMachine {
       // add current coins to coinset if
          if(currentCoins =  ) {
             FilteredProduct.pop()
-                    
+
          }
          else{
                System.out.println("Not Enough Money Entered");
