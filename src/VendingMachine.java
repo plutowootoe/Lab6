@@ -1,12 +1,10 @@
-import java.lang.reflect.Array;
-import java.nio.file.DirectoryStream.Filter;
 import java.util.ArrayList;
 
 /**
  * A vending machine.
  */
 public class VendingMachine {
-   private ArrayList<Product> products;
+   private final ArrayList<Product> products;
    public CoinSet coins;
    public CoinSet currentCoins;
 
@@ -14,7 +12,7 @@ public class VendingMachine {
     * Constructs a VendingMachine object.
     */
    public VendingMachine() {
-      products = new ArrayList<Product>();
+      products = new ArrayList<>();
       coins = new CoinSet();
       currentCoins = new CoinSet();
    }
@@ -22,9 +20,9 @@ public class VendingMachine {
    public Product[] getProductTypes() {
       ArrayList<Product> FilteredList = new ArrayList<>();
 
-      for (int i = 0; i < products.size(); i++) {
-         if (!FilteredList.contains(products.get(i))) {
-            FilteredList.add(products.get(i));
+      for (Product product : products) {
+         if (!FilteredList.contains(product)) {
+            FilteredList.add(product);
          }
 
       }
@@ -39,21 +37,33 @@ public class VendingMachine {
    public double removeMoney() {
       double coinTotal = coins.total();
       coins.clearCoins();
+      System.out.println(coinTotal);
       return coinTotal;
    }
 
-   }
+
 
    public void buyProduct() {
       // Check if currentcoins = product value
       // if not give coins back
       // remove product from arraylist
       // add current coins to coinset if
+         if(currentCoins =  ) {
+            FilteredProduct.pop()
+                    
+         }
+         else{
+               System.out.println("Not Enough Money Entered");
+                }
+      return;
    }
 
    public void addProduct() {
       // i = quanity for adding products
       // add product to products arraylist
       //
+      return;
    }
 }
+}
+

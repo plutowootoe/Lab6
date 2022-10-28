@@ -19,6 +19,7 @@ public class Coin {
    // ADD REMAINING CODE HERE
 
    public double getVal() {
+
       return value;
    }
 }
