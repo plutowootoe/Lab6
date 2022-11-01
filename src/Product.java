@@ -16,4 +16,8 @@ public class Product {
       price = aPrice;
    }
    // ADD REMAINING CODE HERE
+
+   public double getPrice(){
+      return price;
+   }
 }

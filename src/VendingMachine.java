@@ -43,13 +43,14 @@ public class VendingMachine {
 
 
 
-   public void buyProduct() {
+   public void buyProduct(Product p) {
       // Check if currentcoins = product value
       // if not give coins back
       // remove product from arraylist
       // add current coins to coinset if
-         if(currentCoins =  ) {
-            FilteredProduct.pop()
+         if(currentCoins.total() >= p.getPrice()) {
+            products.remove(p);
+            System.out.println("Purchased: " + p);
 
          }
          else{
@@ -58,12 +59,12 @@ public class VendingMachine {
       return;
    }
 
-   public void addProduct() {
+   public void addProduct(Product p, int quantity) {
       // i = quanity for adding products
       // add product to products arraylist
-      //
+      for(quantity = 0;quantity<products.size();quantity++){
+         products.add(p);
+      }
       return;
    }
 }
-}
-
